@@ -2,28 +2,7 @@
 
 ## الهدف
 التعرّف على طريقة جلب البيانات من الإنترنت باستخدام JavaScript وواجهات برمجة التطبيقات (API).
-## لكود البرمجي المستخدم ضمن ملف جديد اسمه  index.html :
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-  <meta charset="UTF-8">
-  <title>تجربة API بسيطة</title>
-</head>
-<body>
-  <h2>تجربة واجهة برمجة التطبيقات (API)</h2>
-  <button id="load">عرض المنشور</button>
-  <pre id="result"></pre>
-
-  <script>
-    document.getElementById('load').onclick = async function() {
-      const response = await fetch('https://jsonplaceholder.typicode.com/users/3');
-      const data = await response.json();
-      document.getElementById('result').textContent = 
-       "الاسم: " + data.name + "\n\n" + "البريد: " + data.email
-    };
-  </script>
-</body>
-</html>
+ 
 
 
 ## ما يحدث في الصفحة
@@ -59,6 +38,35 @@ fetch('https://jsonplaceholder.typicode.com/users/1')ثم عدّل عرض الن
 ثم عدّل عرض النتيجة ليُظهر:
 
 "الاسم: " + data.name + "\n\n" + "البريد: " + data.email
+
+
+
+
+
+
+
+لكود البرمجي المستخدم ضمن ملف جديد اسمه  index.html :
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تجربة API بسيطة</title>
+</head>
+<body>
+  <h2>تجربة واجهة برمجة التطبيقات (API)</h2>
+  <button id="load">عرض المنشور</button>
+  <pre id="result"></pre>
+
+  <script>
+    document.getElementById('load').onclick = async function() {
+      const response = await fetch('https://jsonplaceholder.typicode.com/users/3');
+      const data = await response.json();
+      document.getElementById('result').textContent = 
+       "الاسم: " + data.name + "\n\n" + "البريد: " + data.email
+    };
+  </script>
+</body>
+</html>
 
 
 
