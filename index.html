@@ -11,7 +11,7 @@
 
   <script>
     document.getElementById('load').onclick = async function() {
-      const response = await fetch('https://dog.ceo/api/breeds/image/random');
+      const response = await fetch('https://restcountries.com/v3.1/name/egypt');
       const data = await response.json();
       document.getElementById('result').textContent = 
        "الاسم: " + data.name + "\n\n" + "البريد: " + data.email
