@@ -23,8 +23,11 @@
 غيّر الرقم في هذا السطر من الكود:
 ```javascript
 fetch('https://jsonplaceholder.typicode.com/posts/1')
+
+
 بدّل الرابط بالكامل لتجربة واجهة مختلفة:
+
+
 
 fetch('https://jsonplaceholder.typicode.com/users/1')ثم عدّل عرض النتيجة ليُظهر:
 
-"الاسم: " + data.name + "\n\n" + "البريد: " + data.email
