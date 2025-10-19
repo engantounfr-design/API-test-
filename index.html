@@ -16,17 +16,7 @@
       document.getElementById('result').textContent = 
        "الاسم: " + data.name + "\n\n" + "البريد: " + data.email
     };
-    <button id="loadImage">عرض صورة عشوائية</button>
-<img id="photo" width="300" style="display:block;margin-top:10px;">
-      document.getElementById('loadImage').onclick = async function() {
-  try {
-    const response = await fetch('https://dog.ceo/api/breeds/image/random');
-    const data = await response.json();
-    document.getElementById('photo').src = data.message;
-  } catch (e) {
-    alert("حدث خطأ أثناء جلب الصورة");
-  }
-};
+   
   </script>
 </body>
 </html>
