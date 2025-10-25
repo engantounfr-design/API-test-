@@ -59,10 +59,10 @@ fetch('https://jsonplaceholder.typicode.com/users/1')ثم عدّل عرض الن
 
   <script>
     document.getElementById('load').onclick = async function() {
-      const response = await fetch('https://jsonplaceholder.typicode.com/users/3');
+      const response = await fetch('https://jsonplaceholder.typicode.com/users/1');
       const data = await response.json();
       document.getElementById('result').textContent = 
-       "الاسم: " + data.name + "\n\n" + "البريد: " + data.email
+"الاسم: " + data.name + "\n\n" + "البريد: " + data.email
     };
   </script>
 </body>
